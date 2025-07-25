@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import People from "./components/People";
 import Groups from "./components/Groups";
+import SplitExpense from "./components/SplitExpense"; // ✅ NEW
 
 export default function App() {
   const [people, setPeople] = useState([]);
@@ -27,6 +28,11 @@ export default function App() {
       <Header />
       <Groups groups={groups} setGroups={setGroups} />
       <People people={people} setPeople={setPeople} />
+      <SplitExpense
+        people={people}
+        setPeople={setPeople}
+        groups={groups}
+      /> {/* ✅ NEW */}
     </div>
   );
 }
