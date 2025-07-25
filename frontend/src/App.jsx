@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import People from "./components/People";
 import Groups from "./components/Groups";
-import SplitExpense from "./components/SplitExpense"; // ✅ NEW
+import SplitExpense from "./components/SplitExpense"; 
 
 export default function App() {
   const [people, setPeople] = useState([]);
